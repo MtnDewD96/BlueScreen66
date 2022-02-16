@@ -1,0 +1,629 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Feb 10 12:03:14 2022
+| Host         : DESKTOP-SAQKVM2 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file Atelier2_bd_wrapper_bus_skew_routed.rpt -pb Atelier2_bd_wrapper_bus_skew_routed.pb -rpx Atelier2_bd_wrapper_bus_skew_routed.rpx
+| Design       : Atelier2_bd_wrapper
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   128       [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[6]} {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[5]}]]
+                                              [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[5]} {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[6]}]]
+                                                                              Slow             60.000       1.069     58.931
+2   130       [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[50]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[51]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[43]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[45]}]]
+                                              [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[43]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[45]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[51]}]]
+                                                                              Slow             60.000       1.568     58.432
+3   132       [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[51]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[53]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[54]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[56]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[57]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[43]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[45]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[50]}]]
+                                              [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[45]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[56]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[51]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[53]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[54]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[57]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[43]}]]
+                                                                              Slow             40.404       1.736     38.668
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[6]} {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[5]}]] -to [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[5]} {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[6]}]] 60.000
+Requirement: 60.000ns
+Endpoints: 2
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_Atelier2_bd_clk_wiz_0_0
+                      clk_fpga_0            Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[6]/D
+                                                                            Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[5]/D
+                                                                                                            Slow         1.069     58.931
+
+
+Slack (MET) :             58.931ns  (requirement - actual skew)
+  Endpoint Source:        Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_Atelier2_bd_clk_wiz_0_0)
+  Endpoint Destination:   Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_Atelier2_bd_clk_wiz_0_0)
+  Reference Destination:  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            60.000ns
+  Endpoint Relative Delay:   -2.235ns
+  Reference Relative Delay:  -3.669ns
+  Relative CRPR:              0.936ns
+  Uncertainty:                0.571ns
+  Actual Bus Skew:            1.069ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_Atelier2_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    Atelier2_bd_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  Atelier2_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.285     2.777    Atelier2_bd_i/clk_wiz_0/inst/clk_in1_Atelier2_bd_clk_wiz_0_0
+    MMCME2_ADV_X0Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.996    -4.219 r  Atelier2_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.459    Atelier2_bd_i/clk_wiz_0/inst/clk_out1_Atelier2_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101    -2.358 r  Atelier2_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=6124, routed)        1.665    -0.693    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_clk
+    SLICE_X9Y60          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y60          FDRE (Prop_fdre_C_Q)         0.456    -0.237 r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[6]/Q
+                         net (fo=1, routed)           0.644     0.407    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff[6]
+    SLICE_X8Y60          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  Atelier2_bd_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101     1.101    Atelier2_bd_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  Atelier2_bd_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=598, routed)         1.495     2.687    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_clk
+    SLICE_X8Y60          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[6]/C
+                         clock pessimism              0.000     2.687    
+    SLICE_X8Y60          FDRE (Setup_fdre_C_D)       -0.045     2.642    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[6]
+  -------------------------------------------------------------------
+                         data arrival                           0.407    
+                         clock arrival                          2.642    
+  -------------------------------------------------------------------
+                         relative delay                        -2.235    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_Atelier2_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    Atelier2_bd_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  Atelier2_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.583    Atelier2_bd_i/clk_wiz_0/inst/clk_in1_Atelier2_bd_clk_wiz_0_0
+    MMCME2_ADV_X0Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.105    -4.522 r  Atelier2_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.599    -2.923    Atelier2_bd_i/clk_wiz_0/inst/clk_out1_Atelier2_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    -2.832 r  Atelier2_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=6124, routed)        1.492    -1.340    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_clk
+    SLICE_X9Y60          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y60          FDRE (Prop_fdre_C_Q)         0.367    -0.973 r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[5]/Q
+                         net (fo=1, routed)           0.523    -0.450    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff[5]
+    SLICE_X8Y60          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  Atelier2_bd_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    Atelier2_bd_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  Atelier2_bd_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=598, routed)         1.668     2.976    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_clk
+    SLICE_X8Y60          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[5]/C
+                         clock pessimism              0.000     2.976    
+    SLICE_X8Y60          FDRE (Hold_fdre_C_D)         0.243     3.219    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[5]
+  -------------------------------------------------------------------
+                         data arrival                          -0.450    
+                         clock arrival                          3.219    
+  -------------------------------------------------------------------
+                         relative delay                        -3.669    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[50]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[51]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[43]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[45]}]] -to [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[43]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[45]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[51]}]] 60.000
+Requirement: 60.000ns
+Endpoints: 34
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_Atelier2_bd_clk_wiz_0_0
+                      clk_fpga_0            Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]/D
+                                                                            Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]/D
+                                                                                                            Slow         1.568     58.432
+
+
+Slack (MET) :             58.432ns  (requirement - actual skew)
+  Endpoint Source:        Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[50]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_Atelier2_bd_clk_wiz_0_0)
+  Endpoint Destination:   Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[47]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_Atelier2_bd_clk_wiz_0_0)
+  Reference Destination:  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            60.000ns
+  Endpoint Relative Delay:   -1.902ns
+  Reference Relative Delay:  -3.752ns
+  Relative CRPR:              0.853ns
+  Uncertainty:                0.571ns
+  Actual Bus Skew:            1.568ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_Atelier2_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    Atelier2_bd_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  Atelier2_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.285     2.777    Atelier2_bd_i/clk_wiz_0/inst/clk_in1_Atelier2_bd_clk_wiz_0_0
+    MMCME2_ADV_X0Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.996    -4.219 r  Atelier2_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.459    Atelier2_bd_i/clk_wiz_0/inst/clk_out1_Atelier2_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101    -2.358 r  Atelier2_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=6124, routed)        1.684    -0.674    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_clk
+    SLICE_X10Y44         FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[50]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y44         FDRE (Prop_fdre_C_Q)         0.478    -0.196 r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[50]/Q
+                         net (fo=1, routed)           0.801     0.605    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff[50]
+    SLICE_X5Y47          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  Atelier2_bd_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101     1.101    Atelier2_bd_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  Atelier2_bd_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=598, routed)         1.552     2.744    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_clk
+    SLICE_X5Y47          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]/C
+                         clock pessimism              0.000     2.744    
+    SLICE_X5Y47          FDRE (Setup_fdre_C_D)       -0.238     2.507    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]
+  -------------------------------------------------------------------
+                         data arrival                           0.605    
+                         clock arrival                          2.507    
+  -------------------------------------------------------------------
+                         relative delay                        -1.902    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_Atelier2_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    Atelier2_bd_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  Atelier2_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.583    Atelier2_bd_i/clk_wiz_0/inst/clk_in1_Atelier2_bd_clk_wiz_0_0
+    MMCME2_ADV_X0Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.105    -4.522 r  Atelier2_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.599    -2.923    Atelier2_bd_i/clk_wiz_0/inst/clk_out1_Atelier2_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    -2.832 r  Atelier2_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=6124, routed)        1.510    -1.321    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_clk
+    SLICE_X11Y45         FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[47]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y45         FDRE (Prop_fdre_C_Q)         0.367    -0.954 r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[47]/Q
+                         net (fo=1, routed)           0.435    -0.520    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff[47]
+    SLICE_X6Y44          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  Atelier2_bd_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    Atelier2_bd_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  Atelier2_bd_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=598, routed)         1.681     2.989    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_clk
+    SLICE_X6Y44          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]/C
+                         clock pessimism              0.000     2.989    
+    SLICE_X6Y44          FDRE (Hold_fdre_C_D)         0.243     3.232    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]
+  -------------------------------------------------------------------
+                         data arrival                          -0.520    
+                         clock arrival                          3.232    
+  -------------------------------------------------------------------
+                         relative delay                        -3.752    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[51]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[53]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[54]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[56]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[57]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[43]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[45]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[50]}]] -to [get_cells [list {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[44]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[45]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[46]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[47]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[48]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[49]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[56]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[50]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[51]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[52]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[53]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[24]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[25]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[27]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[54]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[30]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[31]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[32]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[33]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[34]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[35]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[36]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[38]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[39]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[57]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[40]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[41]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[42]} \
+          {Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[43]}]] 40.404
+Requirement: 40.404ns
+Endpoints: 38
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_fpga_0            clk_out1_Atelier2_bd_clk_wiz_0_0
+                                            Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]/D
+                                                                            Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[56]/D
+                                                                                                            Slow         1.736     38.668
+
+
+Slack (MET) :             38.668ns  (requirement - actual skew)
+  Endpoint Source:        Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Endpoint Destination:   Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_Atelier2_bd_clk_wiz_0_0)
+  Reference Source:       Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[56]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Destination:  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[56]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_Atelier2_bd_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            40.404ns
+  Endpoint Relative Delay:    5.840ns
+  Reference Relative Delay:   4.086ns
+  Relative CRPR:              0.589ns
+  Uncertainty:                0.571ns
+  Actual Bus Skew:            1.736ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  Atelier2_bd_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    Atelier2_bd_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  Atelier2_bd_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=598, routed)         1.726     3.034    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_clk
+    SLICE_X4Y39          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y39          FDRE (Prop_fdre_C_Q)         0.478     3.512 r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[37]/Q
+                         net (fo=1, routed)           0.814     4.326    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff[37]
+    SLICE_X5Y39          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_Atelier2_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    Atelier2_bd_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  Atelier2_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.583    Atelier2_bd_i/clk_wiz_0/inst/clk_in1_Atelier2_bd_clk_wiz_0_0
+    MMCME2_ADV_X0Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.105    -4.522 r  Atelier2_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.599    -2.923    Atelier2_bd_i/clk_wiz_0/inst/clk_out1_Atelier2_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    -2.832 r  Atelier2_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=6124, routed)        1.552    -1.279    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_clk
+    SLICE_X5Y39          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]/C
+                         clock pessimism              0.000    -1.279    
+    SLICE_X5Y39          FDRE (Setup_fdre_C_D)       -0.235    -1.514    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[37]
+  -------------------------------------------------------------------
+                         data arrival                           4.326    
+                         clock arrival                         -1.514    
+  -------------------------------------------------------------------
+                         relative delay                         5.840    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  Atelier2_bd_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101     1.101    Atelier2_bd_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  Atelier2_bd_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=598, routed)         1.541     2.733    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_clk
+    SLICE_X5Y53          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[56]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y53          FDRE (Prop_fdre_C_Q)         0.367     3.100 r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff_reg[56]/Q
+                         net (fo=1, routed)           0.538     3.637    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/src_hsdata_ff[56]
+    SLICE_X6Y56          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[56]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_Atelier2_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    Atelier2_bd_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  Atelier2_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.285     2.777    Atelier2_bd_i/clk_wiz_0/inst/clk_in1_Atelier2_bd_clk_wiz_0_0
+    MMCME2_ADV_X0Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.996    -4.219 r  Atelier2_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.459    Atelier2_bd_i/clk_wiz_0/inst/clk_out1_Atelier2_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101    -2.358 r  Atelier2_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=6124, routed)        1.667    -0.691    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_clk
+    SLICE_X6Y56          FDRE                                         r  Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[56]/C
+                         clock pessimism              0.000    -0.691    
+    SLICE_X6Y56          FDRE (Hold_fdre_C_D)         0.243    -0.448    Atelier2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake/dest_hsdata_ff_reg[56]
+  -------------------------------------------------------------------
+                         data arrival                           3.637    
+                         clock arrival                         -0.448    
+  -------------------------------------------------------------------
+                         relative delay                         4.086    
+
+
+

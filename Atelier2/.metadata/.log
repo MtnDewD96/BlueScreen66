@@ -1,0 +1,165 @@
+!SESSION 2022-02-16 14:31:43.443 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2022-02-16 14:31:46.784
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.037
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.038
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.051
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.265
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.265
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.266
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.266
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.267
+!MESSAGE XSCT Command: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.267
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Programs/Xilinx/Vitis/2020.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:31:52.269
+!MESSAGE XSCT command with result: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Result: [null, ]. Thread: Thread-17
+!SESSION 2022-02-16 14:32:48.934 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-16 14:32:50.146
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2022-02-16 14:32:53.997
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:56.942
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:56.942
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:56.956
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:57.167
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:57.168
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:57.168
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:57.169
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:57.175
+!MESSAGE XSCT Command: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:57.175
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Programs/Xilinx/Vitis/2020.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:32:57.176
+!MESSAGE XSCT command with result: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Result: [null, ]. Thread: Thread-18
+!SESSION 2022-02-16 14:35:32.571 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-16 14:35:33.797
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2022-02-16 14:35:37.763
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:40.781
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:40.782
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:40.795
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:41.014
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:41.014
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:41.014
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:41.015
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:41.031
+!MESSAGE XSCT Command: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:41.032
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Programs/Xilinx/Vitis/2020.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:35:41.032
+!MESSAGE XSCT command with result: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Result: [null, ]. Thread: Thread-18
+!SESSION 2022-02-16 14:36:33.153 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-16 14:36:34.368
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2022-02-16 14:36:36.405
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.112
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.113
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.126
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.128
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.129
+!MESSAGE XSCT Command: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.343
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.344
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.344
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.360
+!MESSAGE XSCT command with result: [setws C:/Users/freed/Desktop/BlueScreen66/Atelier2], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-16 14:36:41.361
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Programs/Xilinx/Vitis/2020.2/data]. Thread: Worker-5: Initializing s/w repositories

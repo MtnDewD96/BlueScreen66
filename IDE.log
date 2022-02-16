@@ -1,0 +1,16 @@
+14:36:58 INFO  : Registering command handlers for Vitis TCF services
+14:36:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\freed\Desktop\BlueScreen66\temp_xsdb_launch_script.tcl
+14:37:00 INFO  : XSCT server has started successfully.
+14:37:00 INFO  : Platform repository initialization has completed.
+14:37:00 INFO  : plnx-install-location is set to ''
+14:37:00 INFO  : Successfully done setting XSCT server connection channel  
+14:37:00 INFO  : Successfully done query RDI_DATADIR 
+14:37:00 INFO  : Successfully done setting workspace for the tool. 
+14:37:09 INFO  : Platform 'Atelier2_bd_wrapper' is added to custom repositories.
+14:37:16 INFO  : Checking for BSP changes to sync application flags for project 'Atelier2_vitis'...
+14:37:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/freed/Desktop/BlueScreen66/Atelier2/Atelier2/Atelier2_bd_wrapper/export/Atelier2_bd_wrapper/hw/Atelier2_bd_wrapper.xsa is already opened
+
+14:37:39 INFO  : Checking for BSP changes to sync application flags for project 'Atelier2_vitis'...
+14:37:41 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/freed/Desktop/BlueScreen66/Atelier2/Atelier2/Atelier2_bd_wrapper/export/Atelier2_bd_wrapper/hw/Atelier2_bd_wrapper.xsa is already opened
+
+14:38:07 INFO  : Checking for BSP changes to sync application flags for project 'Atelier2_vitis'...

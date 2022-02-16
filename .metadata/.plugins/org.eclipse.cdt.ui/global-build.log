@@ -1,0 +1,24 @@
+14:38:06 **** Build of project Atelier2_bd_wrapper ****
+buildplatform.bat 50598 Atelier2_bd_wrapper  
+XSDB Server Channel: tcfchan#5
+No Platform exists with name:  Atelier2_bd_wrapper
+    invoked from within
+"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active Atelier2_bd_wrapper; platform generate }}}"
+    (procedure "::tcf::send_command" line 4)
+    invoked from within
+"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
+    invoked from within
+"if { $iswindows == 1 } {    
+
+    set XSDB_PORT [lindex $argv 0]
+    set PLATFORM_NAME [lindex $argv 1]
+    set arglen [llength $argv]
+    set lastind..."
+    (file "C:/Programs/Xilinx/Vitis/2020.2\scripts\vitis\util\buildplatform.tcl" line 11)
+14:38:07 **** Incremental Build of configuration Debug for project Atelier2_vitis ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.

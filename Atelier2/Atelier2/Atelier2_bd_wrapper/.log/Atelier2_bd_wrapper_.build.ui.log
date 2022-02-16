@@ -1,0 +1,20 @@
+2022-02-16T14:38:06.114443500255-14:38:06 **** Build of project Atelier2_bd_wrapper ****
+000-buildplatform.bat 50598 Atelier2_bd_wrapper  
+000-XSDB Server Channel: tcfchan#5
+000-No Platform exists with name:  Atelier2_bd_wrapper
+000-    invoked from within
+000-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active Atelier2_bd_wrapper; platform generate }}}"
+000-    (procedure "::tcf::send_command" line 4)
+000-    invoked from within
+000-"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
+000-    invoked from within
+000-"if { $iswindows == 1 } {    
+000-
+000-    set XSDB_PORT [lindex $argv 0]
+000-    set PLATFORM_NAME [lindex $argv 1]
+000-    set arglen [llength $argv]
+000-    set lastind..."
+000-    (file "C:/Programs/Xilinx/Vitis/2020.2\scripts\vitis\util\buildplatform.tcl" line 11)
+00255-
+14:38:07 Build Finished (took 1s.564ms)
+
